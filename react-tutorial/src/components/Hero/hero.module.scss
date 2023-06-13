@@ -1,0 +1,81 @@
+@use "../../styles/variables";
+
+.hero {
+  color: white;
+  position: relative;
+  padding-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+
+  &Container {
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &Content {
+    gap: 3rem;
+
+    &Title {
+      position: relative;
+      z-index: 1;
+
+      h1 {
+        font-weight: 600;
+        font-size: 3.8rem;
+        line-height: 4rem;
+      }
+
+      &Circle {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background: variables.$orange-gradient;
+        position: absolute;
+        z-index: -1;
+        right: 28%;
+        top: -10%;
+      }
+    }
+
+    &Search {
+      background-color: white;
+      border-radius: 5px;
+      border: 3px solid rgba(120, 120, 120, 0.374);
+      padding: 0.5rem 1rem;
+      justify-content: space-between;
+      width: 100%;
+
+      input {
+        border: none;
+        outline: none;
+      }
+    }
+
+    &Stats {
+      width: 100%;
+      justify-content: space-between;
+
+      &Stat > :nth-child(1) {
+        font-size: 2rem;
+
+        > :last-child {
+          color: orange;
+        }
+      }
+    }
+  }
+
+  &Picture {
+    &Img {
+      width: 30rem;
+      height: 35rem;
+      overflow: hidden;
+      border-radius: 15rem 15rem 0 0;
+      border: 8px solid rgba(255, 255, 255, 0.12);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

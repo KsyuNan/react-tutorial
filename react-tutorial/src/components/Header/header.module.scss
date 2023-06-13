@@ -1,0 +1,21 @@
+@use "../../styles/variables";
+
+.header {
+  color: white;
+  font-family: "Poppins", sans-serif;
+
+  &Container {
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: variables.$secondary;
+  }
+
+  &Menu {
+    gap: 2rem;
+
+    > *:hover {
+      cursor: pointer;
+    }
+  }
+}

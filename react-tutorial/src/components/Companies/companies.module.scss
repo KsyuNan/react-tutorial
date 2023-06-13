@@ -1,0 +1,10 @@
+.Companies {
+  &Container {
+    justify-content: space-between;
+    gap: 1rem;
+
+    img {
+      width: 9rem;
+    }
+  }
+}

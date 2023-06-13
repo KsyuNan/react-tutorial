@@ -1,19 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Hero from './components/Hero/Hero'
+import Header from './components/Header/Header'
+import Companies from './components/Companies/Companies'
 import './App.scss'
+
 
 function App() {
 
   return (
-    <nav>
-     <h1>Bob's Bistro</h1>
-     <ul>
-      <li>Menu</li>
-      <li>About</li>
-      <li>Contact</li>
-     </ul>
-    </nav>
+    <div className='App'>
+      <div>
+        <div className='white-gradient' />
+        <Header />
+        <Hero />
+      </div>
+      <Companies />
+      <Recidencies />
+    </div>
   )
 }
 
