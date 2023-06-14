@@ -1,0 +1,19 @@
+.contacts {
+  font-family: "Poppins", sans-serif;
+
+  &Container {
+    justify-content: space-between;
+
+    > div {
+      flex: 1;
+    }
+
+    &Picture {
+      width: 100%;
+    }
+
+    &Title {
+      gap: 0.5rem;
+    }
+  }
+}

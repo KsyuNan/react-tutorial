@@ -1,0 +1,40 @@
+@use "../../../../styles/variables";
+
+.accordionSection {
+  font-family: "Poppins", sans-serif;
+
+  &Side {
+    margin-top: 2rem;
+    border: none;
+
+    &Item {
+      background: white;
+      border: 0.8px solid rgba(128, 128, 128, 0.143);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 20px;
+
+      &Button {
+        background: white;
+        padding: 1rem;
+        width: 100%;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+
+      &Icon {
+        padding: 10px;
+        background: #eeeeff;
+        border-radius: 5px;
+
+        svg {
+          fill: variables.$blue;
+        }
+      }
+    }
+  }
+}
+
+.primaryText {
+  font-size: 1.1rem;
+}

@@ -1,0 +1,15 @@
+.value {
+  font-family: "Poppins", sans-serif;
+
+  &Container {
+    &Picture {
+      > div {
+        border: 8px solid rgb(232 232 232 / 93%);
+      }
+    }
+
+    > div {
+      flex: 1;
+    }
+  }
+}

@@ -7,7 +7,7 @@ import CountUp from 'react-countup'
 const Hero = () => {
     return (
 
-        <section className={`${styles.hero} paddings`}>
+        <section className={`${styles.hero} `}>
             <div className={`${styles.heroContainer} paddings innerWidth flexCenter`}>
                <div className={`${styles.heroContent} flexColStart`}>
                    <div className={styles.heroContentTitle}>
