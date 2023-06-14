@@ -1,0 +1,10 @@
+.residencies {
+  &Container {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &Header {
+    margin: 2rem;
+  }
+}

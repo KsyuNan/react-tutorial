@@ -1,10 +1,19 @@
 import styles from './residencies.module.scss'
-import { Swiper, SwiperSlide, useSwiper} from 'swiper/react'
-import 'swiper/css'
-import data from '../../utils/slider.json'
+import { SwiperSlider } from './components/SwiperSlider/SwiperSlider'
 
-export const Residencies = () => {
+ export const Residencies = () => {
     return (
-     
+     <section className={styles.residencies}>
+        <div className={`${styles.residenciesContainer} paddings innerWidh`}>
+            <div className={`${styles.residenciesContainerHeader} flexColStart`}>
+             <span className={`orangeText`}>Best Choices</span>
+             <span className={`primaryText`}>Popular Recidencies</span>
+            </div>
+
+                <SwiperSlider />  
+                    
+        </div>
+     </section>
     )
 }
+

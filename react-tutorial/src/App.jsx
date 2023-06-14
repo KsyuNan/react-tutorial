@@ -1,6 +1,7 @@
 import Hero from './components/Hero/Hero'
 import Header from './components/Header/Header'
-import Companies from './components/Companies/Companies'
+import { Companies }  from './components/Companies/Companies'
+import {Residencies} from './components/Residencies/Residencies'
 import './App.scss'
 
 
@@ -14,7 +15,7 @@ function App() {
         <Hero />
       </div>
       <Companies />
-      <Recidencies />
+      <Residencies />
     </div>
   )
 }
