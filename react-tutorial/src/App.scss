@@ -3,6 +3,7 @@
 .App {
   position: relative;
   overflow-x: clip;
+  font-family: "Poppins", sans-serif;
 }
 
 .App > :nth-child(1) {
@@ -17,4 +18,33 @@
   background: rgba(255, 255, 255, 0.522);
   filter: blur(100px);
   border-radius: 100px;
+}
+
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .orangeText {
+    font-size: 1.2rem;
+  }
 }

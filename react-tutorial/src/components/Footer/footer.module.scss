@@ -1,11 +1,11 @@
 .footer {
-  font-family: "Poppins", sans-serif;
   &Container {
-    justify-content: space-between;
+    justify-content: space-between !important;
 
     &Logo {
       gap: 1rem;
     }
+
     &Info {
       gap: 1.5rem;
       margin-top: 1.5rem;

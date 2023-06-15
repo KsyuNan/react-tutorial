@@ -2,10 +2,9 @@
 
 .header {
   color: white;
-  font-family: "Poppins", sans-serif;
 
   &Container {
-    justify-content: space-between;
+    justify-content: space-between !important;
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: variables.$secondary;
@@ -13,13 +12,39 @@
     img {
       width: 100px;
     }
+
+    &Menu {
+      gap: 2rem;
+
+      > *:hover {
+        cursor: pointer;
+      }
+    }
+
+    &Icon {
+      display: none;
+    }
   }
+}
 
-  &Menu {
-    gap: 2rem;
+@media screen and (max-width: 640px) {
+  .header {
+    &Container {
+      &Menu {
+        color: variables.$black;
+        position: absolute;
+        top: 3rem;
+        right: 4rem;
+        background: white;
+        flex-direction: column;
+        font-weight: 500;
+        gap: 2rem;
+        padding: 3rem;
+      }
+    }
 
-    > *:hover {
-      cursor: pointer;
+    &Icon {
+      display: block;
     }
   }
 }

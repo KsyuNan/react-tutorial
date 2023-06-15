@@ -46,7 +46,7 @@
       border: 3px solid rgba(120, 120, 120, 0.374);
       padding: 0.5rem 1rem;
       justify-content: space-between;
-      width: 50%;
+      width: 70%;
       display: block;
 
       input {
@@ -59,11 +59,15 @@
       width: 100%;
       justify-content: space-between;
 
-      &Stat > :nth-child(1) {
-        font-size: 2rem;
+      &Stat {
+        padding-right: 2rem;
 
-        > :last-child {
-          color: orange;
+        > :nth-child(1) {
+          font-size: 2rem;
+
+          > :last-child {
+            color: orange;
+          }
         }
       }
     }

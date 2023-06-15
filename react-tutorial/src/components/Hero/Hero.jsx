@@ -9,7 +9,7 @@ const Hero = () => {
 
         <section className={`${styles.hero} `}>
             <div className={`${styles.heroContainer} paddings innerWidth flexCenter`}>
-               <div className={`${styles.heroContent} flexColStart`}>
+               <div className={`${styles.heroContent} flexColStart flexCenter`}>
                    <div className={styles.heroContentTitle}>
                     <div className={styles.heroContentTitleCircle} />
                       <h1>Discover<br /> Most Suitable <br/> Property</h1>
